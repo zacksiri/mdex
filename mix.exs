@@ -70,7 +70,7 @@ defmodule MDEx.MixProject do
   defp deps do
     [
       {:rustler, "~> 0.32", optional: not (@dev? or @force_build?)},
-      {:rustler_precompiled, "~> 0.7"},
+      {:rustler_precompiled, github: "zacksiri/rustler_precompiled"},
       {:ex_doc, "~> 0.34", only: :dev}
     ]
   end
